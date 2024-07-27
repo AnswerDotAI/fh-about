@@ -1,5 +1,9 @@
 from fh_bootstrap import *
 from itertools import chain
+from markdown import markdown
+
+md_exts='codehilite', 'smarty', 'extra', 'sane_lists'
+def Markdown(s, exts=md_exts, **kw): return Div(NotStr(markdown(s, extensions=exts)), **kw)
 
 ghurl = 'https://github.com/AnswerDotAI/fasthtml'
 fhurl = 'https://fastht.ml'
