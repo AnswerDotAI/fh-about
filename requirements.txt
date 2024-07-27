@@ -1,5 +1,4 @@
-python-fasthtml>=0.1.9
 pygments
 markdown
-fh-bootstrap>=0.0.2
+fh-bootstrap>=0.0.3
 
