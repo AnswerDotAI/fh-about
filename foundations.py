@@ -74,7 +74,7 @@ In the previous section, the server responded with the body "`hello`". But in pr
 
 To add styling to the browser's representation of a document, we add styles using *CSS*. One approach is to manually define styles in a CSS file---for instance [here's the stylesheet](https://github.com/AnswerDotAI/fh-bootstrap/blob/main/assets/fh-bootstrap.css#L1) we're using for the site you're reading now, with the CSS rule which gives the above HTML block a light grey border and background.
 
-Most styles in most FastHTML applications won't be manually defined, but instead will come from a CSS framework like Bootstrap, DaisyUI, or Shoelace. FastHTML makes these easily available as [XT components](/components).
+Most styles in most FastHTML applications won't be manually defined, but instead will come from a CSS framework like Bootstrap, DaisyUI, or Shoelace. FastHTML makes these easily available as [FT components](/components).
 
 Although most of the logic of your application will generally be written in Python and made available over HTTP using FastHTML, you might well want some self-contained UI updates to happen directly in the browser. For this, you can write JavaScript and add it to the web page using FastHTML. This is not often strictly required, but can make some parts of your app faster, more concise, or add some convenient functionality from the browser's DOM API. For instance, we often add a "Copy" button with sample code in our apps, which requires using the DOM API, and therefore requires adding a little JavaScript. JavaScript was originally designed for this purpose, so it's a particularly good fit for adding client-side behaviours to applications.
 """

@@ -23,15 +23,15 @@ By using Python as the HTML-generation language, we can avoid these disadvantage
 """
 
 s2 = """
-FastHTML's underlying component data structure is called `XT` ("XML tag"). To learn how this works in detail, see the [Explaining XT Components](https://docs.fastht.ml/explaining_components.html) page. `XT` objects can be created with functions with the Capitalized name of each HTML tag, such as `Div`, `P`, and `Img`. The functions generally take positional and keyword arguments:
+FastHTML's underlying component data structure is called `FT` ("XML tag"). To learn how this works in detail, see the [Explaining FT Components](https://docs.fastht.ml/explaining_components.html) page. `FT` objects can be created with functions with the Capitalized name of each HTML tag, such as `Div`, `P`, and `Img`. The functions generally take positional and keyword arguments:
 
-- Positional arguments represent a list of children, which can be strings (in which case they are text nodes), XT child components, or other Python objects (which are stringified).
+- Positional arguments represent a list of children, which can be strings (in which case they are text nodes), FT child components, or other Python objects (which are stringified).
 - Keyword arguments represent a dictionary of attributes, which can be used to set the properties of the HTML tag
 - Keyword arguments starting with `hx_` are used for HTMX attributes.
 
 Some functions, such as `File`, have special syntax for their arguments. For instance, `File` takes a single filename argument, and creates a DOM subtree representing the contents of the file.
 
-Any FastHTML handler can return a tree of `XT` components, or a tuple of XT component trees, which will be rendered as HTML partials and sent to the client for processing by HTMX. If a user goes directly to a URL rather than using HTMX, the server will automatically return a full HTML page with the partials embedded in the body.
+Any FastHTML handler can return a tree of `FT` components, or a tuple of FT component trees, which will be rendered as HTML partials and sent to the client for processing by HTMX. If a user goes directly to a URL rather than using HTMX, the server will automatically return a full HTML page with the partials embedded in the body.
 
 Much of the time you'll probably be using pre-written FastHTML components that package up HTML, CSS, and JS. Often, these will in turn hand off much of the work to some general web framework; for instance the site you're reading now uses Bootstrap (and the `fh-bootstrap` FastHTML wrapper).
 
