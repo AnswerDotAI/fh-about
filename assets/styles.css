@@ -1,0 +1,25 @@
+pre {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+:root, [data-bs-theme=light] {
+    --bs-secondary: #3cdd8c;
+    --bs-secondary-rgb: 60, 221, 140;
+}
+
+nav.navbar { --bs-btn-hover-bg: rgba(255,255,255,0.2); }
+.nav-link:hover { color: rgba(255,255,0,0.6); }
+.nav-link.active { font-weight: bold; }
+
+@media (min-width: 992px) {
+    .rounded-tl-lg { border-top-left-radius: 1.5rem !important; }
+}
+
+.rounded-lg {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}

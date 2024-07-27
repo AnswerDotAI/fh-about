@@ -10,7 +10,7 @@ fhurl = 'https://fastht.ml'
 
 def BstPage(selidx, title, *c):
     navitems = [('About', '/'), ('Vision', '/vision'), ('Foundations', '/foundation'),
-                ('Technology', '/tech'), ('Components', '/components'), ('Limitations', '#', {'disabled':True})]
+                ('Technology', '/tech'), ('Components', '/components'), ('Limits', '#', {'disabled':True})]
     ra_items = (A('Docs', href='https://docs.fastht.ml', cls="nav-link"),
                 Icon('fab fa-github', dark=False, sz='lg', href=ghurl, cls='ms-2 px-2'))
     ftlinks = [A(k, href=v, cls='nav-link px-2 text-muted')
@@ -20,7 +20,7 @@ def BstPage(selidx, title, *c):
         Script('initTOC()'),
         Container(
             Navbar('nav', selidx, items=navitems, ra_items=ra_items, cls='navbar-light bg-secondary rounded-lg',
-                image='assets/logo.svg', hdr_href=fhurl, placement=PlacementT.Default),
+                image='assets/logo.svg', hdr_href=fhurl, placement=PlacementT.Default, expand=SizeT.Md, toggle_left=False),
             Toc(Container(H1(title, cls='pb-2 pt-1'), *c, cls='mt-3')),
             BstFooter('© 2024 onwards AnswerDotAI, Inc', File('assets/logo.svg'), img_href='http://www.fastht.ml', cs=ftlinks),
         typ=ContainerT.Xl, cls='mt-3', data_bs_spy='scroll', data_bs_target='#toc')
