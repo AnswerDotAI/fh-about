@@ -1,0 +1,5 @@
+python-fasthtml>=0.1.1
+pygments
+markdown
+fh-bootstrap
+
