@@ -7,7 +7,7 @@ def page():
     return BstPage(4, "Python HTML components", *secs)
 
 s1 = """
-FastHTML embeds HTML generation inside Python code. The idea of embedding an HTML generator inside a programming language is not new. It is a particularly popular approach in functional languages, and includes libraries like: Elm-html (Elm), hiccl (Common Lisp), hiccup (Clojure), Falco.Markup (F#), Lucid (Haskell), Phlex (Ruby), htpy (Python), and dream-html (OCaml). JSX is the most popular example of this approach.
+FastHTML embeds HTML generation inside Python code. The idea of embedding an HTML generator inside a programming language is not new. It is a particularly popular approach in functional languages, and includes libraries like: Elm-html (Elm), hiccl (Common Lisp), hiccup (Clojure), Falco.Markup (F#), Lucid (Haskell), and dream-html (OCaml). But the idea has now gone far beyond the functional programming world---today JSX, an embedded HTML generator for React, is one of the most popular approaches for creating web apps today.
 
 However most Python programmers are probably more familiar with template-based approaches, such as Jinja2 or Mako. Templates were originally created for web development in the 1990s, back when web design required complex browser-specific HTML. By using templates, designers were able to work in a familiar language, and programmers could "fill in the blanks" with the data they needed. Today this is not needed, since we can create simple semantic HTML, and use CSS to style it.
 
@@ -33,9 +33,11 @@ Some functions, such as `File`, have special syntax for their arguments. For ins
 
 Any FastHTML handler can return a tree of `FT` components, or a tuple of FT component trees, which will be rendered as HTML partials and sent to the client for processing by HTMX. If a user goes directly to a URL rather than using HTMX, the server will automatically return a full HTML page with the partials embedded in the body.
 
-Much of the time you'll probably be using pre-written FastHTML components that package up HTML, CSS, and JS. Often, these will in turn hand off much of the work to some general web framework; for instance the site you're reading now uses Bootstrap (and the `fh-bootstrap` FastHTML wrapper).
+Much of the time you'll probably be using pre-written FastHTML components that package up HTML, CSS, and JS. Often, these will in turn hand off much of the work to some general web framework; for instance the site you're reading now uses Bootstrap (and the `fh-bootstrap` FastHTML wrapper). At first, moving from HTML to FT components, can seem odd, but it soon becomes natural -- as one of our preview users told us:
 
-Another good approach to creating components is to find things you like on the web and convert them to FastHTML. There's a simple trick to doing this:
+> "*In my head I had resistance and initial scepticism to converting all my HTML to FT. When I realised that working with the tags in Python is like the elegance of working in the frequency domain after Fourier transform vs. working with time series data in the time domain, I finally gave in, let go, started enjoying the FT tags. The first few times I thought the approach of conversion and then copy pasting was crazy. It was only when I started to understand how to organise the tags into components that it suddenly felt elegant and templates felt crazy.*"
+
+One good approach to creating components is to find things you like on the web and convert them to FastHTML. There's a simple trick to doing this:
 
 1. Right-click on the part of a web page that you want to use in your app, and choose 'Inspect'
 1. In the elements window that pops up, right-click on the element you want, choose 'Copy', and then 'Outer HTML'

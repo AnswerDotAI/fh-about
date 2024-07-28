@@ -14,7 +14,7 @@ def BstPage(selidx, title, *c):
     ra_items = (A('Docs', href='https://docs.fastht.ml', cls="nav-link"),
                 Icon('fab fa-github', dark=False, sz='lg', href=ghurl, cls='ms-2 px-2'))
     ftlinks = [A(k, href=v, cls='nav-link px-2 text-muted')
-        for k,v in dict(Home='https://www.fastht.ml', Docs='https://docs.fastht.ml', Company='https://www.answer.ai').items()]
+        for k,v in dict(Home='/', Docs='https://docs.fastht.ml', Company='https://www.answer.ai').items()]
     return (
         Title(title),
         Script('initTOC()'),

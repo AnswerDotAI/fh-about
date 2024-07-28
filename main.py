@@ -25,4 +25,4 @@ def get(): return tech.page()
 @rt('/vision')
 def get(): return vision.page()
 
-run_uv()
+serve()

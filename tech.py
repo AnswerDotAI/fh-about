@@ -7,6 +7,13 @@ def page():
     return BstPage(3, "FastHTML's tech stack", *secs)
 
 s1 = """
+Many of the largest software systems in the world are built using Python, such as much of the code for YouTube, Instagram, Dropbox, and many others. In 2019, Dropbox announced that python was their "most widely used language both for backend services and the desktop client app", with 4 million lines of code.
+
+If you're already a Python programmer, then you'll know how easy it is to turn your ideas into code using this language. As well as being used for large-scale systems, Python is also popular for the day-to-day work of scientists, engineers, data analysts, and so forth.
+
+One particular challenge for Python programmers has been that to create a modern web application, they have had to also learn JavaScript, along with a framework like React, Angular, or Vue. Even after learning all this, they still have to deal with the complexity of writing, debugging, and maintaining a multi-language system with complex interactions between the two languages and across the client-server boundary.
+
+With FastHTML, you'll often find you never have to write any JavaScript at all. Not only does development and debugging become much easier, but many features suddenly become easier to implement. For instance, when we wanted to add caching to speed up our [home page](https://fastht.ml), we simply added a standard decorator to the function that creates it. No need for special infrastructure, because the implementation is all in one place. ASGI makes this particularly powerful---it can handle caching, sessions, authentication, host-based redirects, sub-routing, and more, all in one place. All of this is directly accessible from FastHTML.
 """
 
 s2 = """
@@ -43,12 +50,17 @@ In this case, the returned element will replace the original `P` element (since 
 def get(): return P('Nice to be here!')
 ```
 
-As we discussed in the [HTMX foundations](http://localhost:5001/foundation#sec2) section, HTMX removes four critical constraints of HTML. It allows any event on any DOM element to call any HTTP method on any path and place the response anywhere in the DOM.
+As we discussed in the [HTMX foundations](http://localhost:5001/foundation#sec2) section, HTMX removes four critical constraints of HTML. It allows any event on any DOM element to call any HTTP method on any path and place the response anywhere in the DOM. If you haven't written a hypermedia-based application before, then we strongly recommend reading the [Hypermedia Systems book](https://hypermedia.systems/). It explains how to build hypermedia applications using HTMX; the techniques you learn there will be directly applicable to FastHTML.
 """
 
-s3 = """"""
+s3 = """
+[Uvicorn](https://www.uvicorn.org/) is, according to its website, "an ASGI web server". What does that even mean? As [we've discussed](/foundations#sec1), ASGI is a Python API that converts HTTP requests and responses into Python function calls. Uvicorn is a web server which a web browser can talk to, and it in turn talks to an ASGI application, returning its results back to the browser.
 
-s4 = """"""
 
-s5 = """"""
+"""
 
+s4 = """
+"""
+
+s5 = """
+"""

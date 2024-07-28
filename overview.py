@@ -9,7 +9,11 @@ def page():
     return BstPage(0, 'About FastHTML', *secs)
 
 s1 = """
-You're using a FastHTML app right now. We didn't create a separate blog system for this site, because building apps with FastHTML is so easy there's no need for it! Here is the [source code](https://github.com/AnswerDotAI/fh-about/blob/main/overview.py) for the page you're reading right now. You'll see that the source code is very simple, relying on Python components like `Markdown` to build the page. The components are simple Python functions---for instance, here is the [source code for `Markdown`](https://github.com/AnswerDotAI/fh-bootstrap/blob/main/bootstrap.py#L5-L6), taking just two lines of code!
+You're using a FastHTML app right now. We didn't create a separate blog system for this site, because building apps with FastHTML is so easy there's no need for it! Here is the [source code](https://github.com/AnswerDotAI/fh-about/blob/main/overview.py) for the page you're reading right now. You'll see that the source code is very simple, relying on Python components like `Markdown` to build the page. The components are simple Python functions---for instance, here is the [source code for `Markdown`](https://github.com/AnswerDotAI/fh-about/blob/main/app.py#L6), taking just one line of code!
+
+The site you're reading right now, about.fastht.ml, provides background information about the key concepts and ideas behind FastHTML. Because FastHTML brings together many different web technologies, it's worth investing some time to understand how it all fits together. Have a look through the five sections in the green navbar (or hamburger menu if you're on mobile) above to deepen your understanding. As one of our preview users told us:
+
+> "*I think the fact that an experienced web dev can get productive in 1 hour accidentally undersells FastHTML a bit. For me it is like a fractal where the more I explore, the more interesting is and the more I learn. I'm about 40 hours in, enough to realise I know nothing compared with what I can learn.*"
 
 If you're an experienced web dev, then you can use all your knowledge of CSS, HTML, JS, etc. to build web applications with FastHTML right away. We've heard from expert coders that they have successfully built complete web apps within an hour of getting started with FastHTML. We've got a [Quickstart for Web Developers](https://docs.fastht.ml/quickstart_for_web_devs.html) tutorial that will get you up and running quickly. (Read the rest of the docs while you're there!) Next, read through the heavily-commented source of this [idiomatic fasthtml app](https://github.com/AnswerDotAI/fasthtml/blob/main/examples/adv_app.py). Then study some of the [fasthtml-example applications](https://github.com/AnswerDotAI/fasthtml-example), particularly the first four listed.
 
@@ -23,10 +27,10 @@ FastHTML was originally started by Jeremy Howard at Answer.AI for a number of re
 
 - Over 25 years of web development, Jeremy realized that web programming could be easier and more powerful. He was particularly concerned that recent trends had moved away from the power of the web's foundations, resulting in a fractured ecosystem of over-complex frameworks and tools
 - He saw that two small but ingenious developments had made the web's foundations more powerful and more accessible: **ASGI** and **HTMX**. But the tools available for using them were still too complex, and the barriers to entry were still too high
-- Jeremy and his wife Rachel had spent the last 8 years working to make artifical intelligence accessible to more people. They saw that the most widely used web development tools were too complex for people who aren't full time coders. This meant that Jeremy and Rachel's students struggled to turn their AI project ideas into working applications.
+- Jeremy and his wife Rachel had spent the last 8 years working to make artificial intelligence accessible to more people. They saw that the most widely used web development tools were too complex for people who aren't full time coders. This meant that Jeremy and Rachel's students struggled to turn their AI project ideas into working applications.
 - Jeremy's goal for Answer.AI is to help society benefit from AI, which means creating lots of useful products and services that use AI effectively---so creating those products and services needs to be made as fast and easy as possible.
 
-FastHTML is a framework that deals with all these issues: it returns to the roots of the web, leveraging ASGI and HTMX, and is usable by both experienced developers and new coders. One of the biggest hurdles we've noticed for experts is that they assume all the complexity of prior frameworks is necessary, and that's not true. So be sure to read the docs and examples, and keep an open mind!
+FastHTML is a framework that deals with all these issues: it returns to the roots of the web, leveraging ASGI and HTMX, and is usable by both experienced developers and new coders.
 
 #### A new generation of coders
 
@@ -36,7 +40,7 @@ But this new generation of coders do not generally have the same background as f
 """
 
 s3 = """
-FastHTML works well right now, but it is still young. We are using it for nearly every part of the FastHTML project itself. For instance, we worked with a design team to create the [fastht.ml home page](https://www.fastht.ml/), which is implemented in FastHTML---here is the [home page source](https://github.com/AnswerDotAI/home-fasthtml/blob/main/main.py).
+FastHTML works well right now, but it is still young. We are using it for nearly every part of the FastHTML project itself ("almost" because the docs are using [Quarto](https://quarto.org/) for now; we plan to port them to a FastHTML-based documentation system soon). For instance, we worked with a design team to create the [fastht.ml home page](https://www.fastht.ml/), which is implemented in FastHTML---here is the [home page source](https://github.com/AnswerDotAI/home-fasthtml/blob/main/main.py).
 
 We're working on a number of things to make FastHTML even better. Not everything is ready "out of the box" yet. If you see something missing that you need, please let us know by [creating an issue](https://github.com/AnswerDotAI/fasthtml/issues). Or feel free to add it yourself and send in a pull request!
 
