@@ -9,9 +9,9 @@ def page():
     return BstPage(0, 'About FastHTML', *secs)
 
 s1 = """
-You're using a FastHTML app right now. We didn't create a separate blog system for this site, because building apps with FastHTML is so easy there's no need for it! Here is the [source code](https://github.com/AnswerDotAI/fh-about/blob/main/overview.py) for the page you're reading right now. You'll see that the source code is very simple, relying on Python components like `Markdown` to build the page. The components are simple Python functions---for instance, here is the [source code for `Markdown`](https://github.com/AnswerDotAI/fh-about/blob/main/app.py#L6), taking just one line of code!
+You're using a FastHTML app right now. We didn't create a separate blog system for this site, because building apps with FastHTML is so easy there's no need for it! Here is the [source code](https://github.com/AnswerDotAI/fh-about/blob/main/overview.py) for the page you're reading right now. You'll see that the source code is very simple, relying on Python components like `Markdown` to build the page. The components are simple Python functions---for instance, here is the [source code for `Markdown`](https://github.com/AnswerDotAI/fh-about/blob/main/app.py#L6), taking just one line of code! Out of the box FastHTML provides authentication, [database](/tech#sec5) access, styles (via [PicoCSS](https://picocss.com/)), and more. Every part of the system is extensible and replacable using pip-installable Python modules.
 
-The site you're reading right now, about.fastht.ml, provides background information about the key concepts and ideas behind FastHTML. Because FastHTML brings together many different web technologies, it's worth investing some time to understand how it all fits together. Have a look through the five sections in the green navbar (or hamburger menu if you're on mobile) above to deepen your understanding. As one of our preview users told us:
+The site you're reading right now provides background information about the key concepts and ideas behind FastHTML. The [documentation](https://docs.fastht.ml/) focuses on the code. Because FastHTML brings together many different web technologies, it's worth investing some time to understand how it all fits together. Have a look through the five sections in the green navbar (or hamburger menu if you're on mobile) above to deepen your understanding. As one of our preview users told us:
 
 > "*I think the fact that an experienced web dev can get productive in 1 hour accidentally undersells FastHTML a bit. For me it is like a fractal where the more I explore, the more interesting is and the more I learn. I'm about 40 hours in, enough to realise I know nothing compared with what I can learn.*"
 
@@ -21,7 +21,7 @@ If you haven't done much (or any) web development, try following through each st
 """
 
 s2 = """
-FastHTML is a system for writing web applications in Python. It is designed to be simple, powerful, and flexible. It is also designed to be easy to learn and use. The project is inspired by technologies such as React JSX, Hotwire, Astro, FastAPI, and Phoenix LiveView.
+FastHTML is a system for writing web applications in Python. It is designed to be simple, powerful, and flexible. It is also designed to be easy to learn and use. The project is inspired by technologies such as React JSX, Hotwire, Astro, FastAPI, and Phoenix LiveView. FastHTML is small and simple---at the time of writing, it's under 1000 lines of code. That's because it's built on top of powerful and flexible foundations: Python, Starlette, Uvicorn, and HTMX. If you're a FastAPI user, much of FastHTML will look very familar; FastAPI was a major inspiration.
 
 FastHTML was originally started by Jeremy Howard at Answer.AI for a number of reasons:
 
