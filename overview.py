@@ -2,7 +2,7 @@ from app import *
 
 def page():
     caption = "'Real' web development shouldn't be this hard..."
-    fig = Image('/assets/webdev2.jpg', alt='Web dev', caption=caption, left=False)
+    fig = Image('assets/webdev.jpg', alt='Web dev', caption=caption, left=False)
     h2s = 'Getting started', 'Background', 'Current Status'
     txts = [Markdown(s1), Div(fig, Markdown(s2)), Markdown(s3)]
     secs = Sections(h2s, txts)
