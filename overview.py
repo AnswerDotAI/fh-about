@@ -19,7 +19,11 @@ The site you're reading right now provides background information about the key 
 
 If you're an experienced web dev, then you can use all your knowledge of CSS, HTML, JS, etc. to build web applications with FastHTML right away. We've heard from expert coders that they have successfully built complete web apps within an hour of getting started with FastHTML. We've got a [Quickstart for Web Developers](https://docs.fastht.ml/tutorials/quickstart_for_web_devs.html) tutorial that will get you up and running quickly. (Read the rest of the docs while you're there!) Next, read through the heavily-commented source of this [idiomatic fasthtml app](https://github.com/AnswerDotAI/fasthtml/blob/main/examples/adv_app.py). Then study some of the [fasthtml-example applications](https://github.com/AnswerDotAI/fasthtml-example), particularly the first four listed.
 
-If you haven't done much (or any) web development, try following through each step of the [FastHTML By Example](https://docs.fastht.ml/tutorials/by_example.html) tutorial. We don't yet have a self-contained guide explaining all the web foundations you'll need to know (HTML, HTTP, CSS, etc.), so you'll probably need to do some self-learning through other resources. But watch this space---we're planning a complete web programming from scratch course soon!
+If you haven't done much (or any) web development, try following through each step of the [FastHTML By Example](https://docs.fastht.ml/tutorials/by_example.html) tutorial. We don't yet have a self-contained guide explaining all the web foundations you'll need to know (HTML, HTTP, CSS, etc.), so you'll probably need to do some self-learning through other resources. But watch this space---we're planning a complete web programming from scratch course soon! In the meantime, here's a 1-hour video lesson to help you get going:
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/Auqrm7WFc0I?si=3B1ZgtH27yJ3u7d0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 """
 
 s2 = """
