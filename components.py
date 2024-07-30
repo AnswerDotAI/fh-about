@@ -23,7 +23,7 @@ By using Python as the HTML-generation language, we can avoid these disadvantage
 """
 
 s2 = """
-FastHTML's underlying component data structure is called `FT` ("FastTag"). To learn how this works in detail, see the [Explaining FT Components](https://docs.fastht.ml/explaining_components.html) page. `FT` objects can be created with functions with the Capitalized name of each HTML tag, such as `Div`, `P`, and `Img`. The functions generally take positional and keyword arguments:
+FastHTML's underlying component data structure is called `FT` ("FastTag"). To learn how this works in detail, see the [Explaining FT Components](https://docs.fastht.ml/explains/explaining_xt_components.html) page. `FT` objects can be created with functions with the Capitalized name of each HTML tag, such as `Div`, `P`, and `Img`. The functions generally take positional and keyword arguments:
 
 - Positional arguments represent a list of children, which can be strings (in which case they are text nodes), FT child components, or other Python objects (which are stringified).
 - Keyword arguments represent a dictionary of attributes, which can be used to set the properties of the HTML tag
@@ -41,9 +41,9 @@ One good approach to creating components is to find things you like on the web a
 
 1. Right-click on the part of a web page that you want to use in your app, and choose 'Inspect'
 1. In the elements window that pops up, right-click on the element you want, choose 'Copy', and then 'Outer HTML'
-1. Now you've got HTML in your clipboard, you can automatically convert it to FastHTML: go to [h2x.answer.ai](https://h2x.answer.ai/), paste the HTML into the text area at the top, then the FastHTML code will appear at the bottom. Click the Copy icon at the top right of that code and then paste it into your Python app.
+1. Now you've got HTML in your clipboard, you can automatically convert it to FastHTML: go to [h2f.answer.ai](https://h2x.answer.ai/), paste the HTML into the text area at the top, then the FastHTML code will appear at the bottom. Click the Copy icon at the top right of that code and then paste it into your Python app.
 
-BTW, the h2x app mentioned above is written in around a dozen lines of code! You can see the [source code here](https://github.com/AnswerDotAI/fasthtml-example/blob/main/h2x/main.py).
+BTW, the h2f app mentioned above is written in around a dozen lines of code! You can see the [source code here](https://github.com/AnswerDotAI/fasthtml-example/blob/main/h2f/main.py).
 """
 
 s3 = """
