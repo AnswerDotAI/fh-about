@@ -7,7 +7,7 @@ def page():
     return BstPage(4, "Python HTML components", *secs)
 
 s1 = """
-FastHTML embeds HTML generation inside Python code. The idea of embedding an HTML generator inside a programming language is not new. It is a particularly popular approach in functional languages, and includes libraries like: Elm-html (Elm), hiccl (Common Lisp), hiccup (Clojure), Falco.Markup (F#), Lucid (Haskell), and dream-html (OCaml). But the idea has now gone far beyond the functional programming world---today JSX, an embedded HTML generator for React, is one of the most popular approaches for creating web apps today.
+FastHTML embeds HTML generation inside Python code. The idea of embedding an HTML generator inside a programming language is not new. It is a particularly popular approach in functional languages, and includes libraries like: Elm-html (Elm), hiccl (Common Lisp), hiccup (Clojure), Falco.Markup (F#), Lucid (Haskell), and dream-html (OCaml). But the idea has now gone far beyond the functional programming world--- JSX, an embedded HTML generator for React, is one of the most popular approaches for creating web apps today.
 
 However most Python programmers are probably more familiar with template-based approaches, such as Jinja2 or Mako. Templates were originally created for web development in the 1990s, back when web design required complex browser-specific HTML. By using templates, designers were able to work in a familiar language, and programmers could "fill in the blanks" with the data they needed. Today this is not needed, since we can create simple semantic HTML, and use CSS to style it.
 
