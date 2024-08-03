@@ -70,7 +70,7 @@ In the previous section, the server responded with the body "`hello`". But in pr
 </html>
 ```
 
-HTML creates structure, and the browser converts the HTML internally into a Document Object Model (DOM) element tree. To add styling to the browser's representation of a document, we add styles using *CSS*. One approach is to manually define styles in a CSS file---for instance [here's the stylesheet](https://github.com/AnswerDotAI/fh-bootstrap/blob/main/assets/fh-bootstrap.css#L1) we're using for the site you're reading now, with the CSS rule which gives the above HTML block a light grey border and background.
+HTML creates structure, and the browser converts the HTML internally into a Document Object Model (DOM) element tree. To add styling to the browser's representation of a document, we add styles using *CSS*. One approach is to manually define styles in a CSS file---for instance [here's the stylesheet](https://github.com/AnswerDotAI/fh-bootstrap/blob/main/fh_bootstrap/assets/fh-bootstrap.css#L1) we're using for the site you're reading now, with the CSS rule which gives the above HTML block a light grey border and background.
 
 Most styles in most FastHTML applications won't be manually defined, but instead will come from a CSS framework like Bootstrap, DaisyUI, or Shoelace. FastHTML makes these easily available as [FT components](/components).
 
