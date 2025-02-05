@@ -4,7 +4,7 @@ def page():
     h2s = 'Why', 'How', 'The future'
     txts = [Markdown(s1), Markdown(s2), Markdown(s3)]
     secs = Sections(h2s, txts)
-    return BstPage(4, "Python HTML components", *secs)
+    return BstPage(4, "Python HTML components", h2s, *secs)
 
 s1 = """
 FastHTML embeds HTML generation inside Python code. The idea of embedding an HTML generator inside a programming language is not new. It is a particularly popular approach in functional languages, and includes libraries like: Elm-html (Elm), hiccl (Common Lisp), hiccup (Clojure), Falco.Markup (F#), Lucid (Haskell), and dream-html (OCaml). But the idea has now gone far beyond the functional programming world--- JSX, an embedded HTML generator for React, is one of the most popular approaches for creating web apps today.
