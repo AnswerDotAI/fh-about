@@ -2,11 +2,11 @@ from app import *
 
 def page():
     caption = "'Real' web development shouldn't be this hard..."
-    fig = Image('/assets/webdev.jpg', alt='Web dev', caption=caption, left=False)
+    fig = Figure(DivCentered(Img(src='/assets/webdev.jpg', alt='Web dev'), Caption(caption, cls=TextT.lg+'pt-4')), cls='float-right w-1/2 m-4')
     h2s = 'Getting started', 'Background', 'Current Status'
     txts = [Markdown(s1), Div(fig, Markdown(s2)), Markdown(s3)]
     secs = Sections(h2s, txts)
-    return BstPage(0, 'About FastHTML', *secs)
+    return BstPage(0, 'About FastHTML', h2s, *secs)
 
 s1 = """
 FastHTML is a new way to create modern interactive web apps. It scales down to a 6-line python file, and scales up to complex production apps.  Auth, DBs, caching, styling, etc are all built-in, and replaceable and extensible. 1-click deploy is available to Railway, Vercel, Huggingface, and more---or deploy to any Python server or VPS, including Azure, GCP, and AWS.

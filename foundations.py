@@ -1,9 +1,9 @@
 from app import *
 
 def page():
-    secs = Sections(('ASGI', 'HTMX', 'HTTP', 'HTML/CSS/JS'),
-                    map(Markdown, [s1, s2, s3, s4]))
-    return BstPage(2, 'The foundations of FastHTML', *secs)
+    h2s = 'ASGI', 'HTMX', 'HTTP', 'HTML/CSS/JS'
+    secs = Sections(h2s, map(Markdown, [s1, s2, s3, s4]))
+    return BstPage(2, 'The foundations of FastHTML', h2s, *secs)
 
 s1 = """
 FastHTML brings together and builds on top of two well-established, astonishingly flexible, performant technology frameworks: *ASGI* (implemented in Uvicorn and Starlette), and *HTMX*.
@@ -63,7 +63,7 @@ When you understand that all web applications communicate like this, and your pr
 s4 = """
 In the previous section, the server responded with the body "`hello`". But in practice, web server responses today generally are either HTML or JSON. With FastHTML (as we'll see in the [HTMX technology section](/tech#sec2)), our responses are nearly always HTML. Here's an example of a basic HTML page with a header and a body containing a paragraph (`<p>` tag).
 
-```
+```html
 <html>
   <head><title>Example</title></head>
   <body><p>Hello World!</p></body>

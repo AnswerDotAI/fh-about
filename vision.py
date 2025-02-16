@@ -2,11 +2,11 @@ from app import *
 
 def page():
     caption = "A minimal FastHTML app really is minimal."
-    fig = Image('assets/hello.png', alt='Web dev', caption=caption, left=False, retina=True)
+    fig = Figure(DivCentered(Img(src='assets/hello.png', alt='Web dev', cls='h-60'), Caption(caption, cls=TextT.lg+'pt-2')), cls='float-right m-2')
     h2s = 'No compromise', 'Scaling down', 'Scaling up'
     txts = [Markdown(s1), Div(fig, Markdown(s2)), Markdown(s3)]
     secs = Sections(h2s, txts)
-    return BstPage(1, 'The FastHTML Vision', *secs)
+    return BstPage(1, 'The FastHTML Vision', h2s, *secs)
 
 s1 = """FastHTML is a general-purpose full-stack web programming system, in the same vein as Django, NextJS, and Ruby on Rails. The vision is to make it the easiest way to create quick prototypes, and **also** the easiest way to create scalable, powerful, rich applications.
 

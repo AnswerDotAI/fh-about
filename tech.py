@@ -4,7 +4,7 @@ def page():
     h2s = 'Python', 'HTMX', 'Uvicorn', 'Starlette', 'SQLite'
     txts = [Markdown(s1), Markdown(s2), Markdown(s3), Markdown(s4), Markdown(s5)]
     secs = Sections(h2s, txts)
-    return BstPage(3, "FastHTML's tech stack", *secs)
+    return BstPage(3, "FastHTML's tech stack", h2s, *secs)
 
 s1 = """
 Many of the largest software systems in the world are built using Python, such as much of the code for YouTube, Instagram, Dropbox, and many others. In 2019, Dropbox announced that python was their "most widely used language both for backend services and the desktop client app", with 4 million lines of code.
@@ -21,7 +21,7 @@ Nowadays most web applications are built using backend systems that return a com
 
 An alternative "hypermedia-based" approach, used by [HTMX](https://htmx.org/), simplifies things greatly by just returning HTML. FastHTML is designed to create hypermedia applications. Nearly all of the complexity of client-server programming vanishes when using this approach. When going to a page directly, the server will respond with a standard HTML web page:
 
-```
+```html
 <html>
   <head><title>FastHTML Page</title></head>
   <body>
@@ -39,7 +39,7 @@ def get(): return Div(P('Hello World!'), hx_get="/change")
 
 When clicking on this link, the server will respond with an "*HTML partial*"---that is, just a snippet of HTML which will be inserted into the existing page:
 
-```
+```html
 <p>Nice to be here!</p>
 ```
 
