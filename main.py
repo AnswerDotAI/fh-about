@@ -9,7 +9,7 @@ hdrs = (
              twitter_site='@answerdotai', image=f'/assets/og-sq.png', url=''),
 )
 
-app,rt = fast_app(pico=False, hdrs=hdrs, live=False)
+app,rt = fast_app(hdrs=hdrs)
 
 app.get('/')(overview.page)
 app.get('/components')(components.page)
